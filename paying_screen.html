@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRJ platenie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="txt">Kliknite tlacitko dole aby ste vase jedlo zaplatili a my vam ho dovezieme</h1>
+    <button onclick="show_txt('Vase jedlo je na ceste!')" id="buttons">Zaplatit</button><br>
+    <h3 id="txt2"></h3>
+    <script>
+        let show_txt_onh3;
+        function show_txt(txt_input) {
+            show_txt_onh3 = txt_input;
+            document.querySelector("#txt2").innerHTML = show_txt_onh3;
+        }
+    </script>
+</body>
+</html>
